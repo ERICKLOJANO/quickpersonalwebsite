@@ -1,0 +1,177 @@
+/*                        DEFAULTS                             */
+header, footer{
+    display: block;
+}
+
+body{
+    line-height: 1;
+    margin: 0;
+}
+
+.container{
+    width:100%;
+    margin: auto;
+    padding-top: 1%;
+    height:400px;
+    padding: 0;
+    display: flex;
+    
+}
+
+.row{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33% }
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* CUSTOM STYLES*/
+
+
+#section-gradient1{
+    background: radial-gradient(circle, rgba(201,199,233,1) 0%, rgba(16,165,214,1) 100%);
+}
+
+
+div.middleColumn{
+    display: block;
+    text-align: center;
+}
+
+
+h1.large{
+    color: dimgrey;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+
+
+
+div.circularImage{
+    display:inline-block;
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-top: 50px;
+}
+
+div.circularImage img{
+    width: auto;
+    height: 100%;
+}
+
+div.leftSideCol{
+    margin-left: 30%;
+}
+
+h1.title{
+    font-weight: bold;
+    font-style: italic;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+p.text{
+    font-size: 22px;
+    text-align: justify;
+}
+
+#section-gradient2{
+    background: linear-gradient(90deg, rgba(156,150,255,1) 0%, rgba(150,150,150,1) 50%, rgba(154,203,213,1) 100%);
+}
+
+
+h1.leftSideCol{
+    margin-left: 30%;
+}
+
+
+div.box{
+    text-align: center;
+    border-radius: 7px;
+/*    background: #fff;*/
+   align-content: center;
+/*    width:100%;*/
+    padding: 1em;
+    width:100%;
+    height: 200px;
+    margin: 0;
+}
+
+img.icon{
+    max-height: 90px;
+    max-width: 90px;
+}
+
+
+a.button1{
+    background-color: floralwhite;
+    color:black;
+    padding: 1em;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 5px;
+    height: 25px;
+    width: 50%;
+    border-radius: 20px;
+    
+}
+
+
+/*MOBILE MOBILE MOBILE MOBILE MOBILE*/
+
+@media screen and (max-width: 680px) {
+    p.text{
+        font-size: 15px;
+    }
+    
+    img.icon{
+        max-height: 50px;
+        max-width: 50px;
+    }
+    
+    h1.title{
+        font-size: 20px;
+    }
+    col-6,col-4,col-12{
+        width: 100%;
+        margin: 0;
+    }
+    
+    a.button1{
+        font-size: 10px;
+        width: 100%;
+        margin: 10px;
+    }
+}
